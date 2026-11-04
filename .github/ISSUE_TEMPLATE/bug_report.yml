@@ -1,0 +1,42 @@
+name: Bug report
+description: Something does not work as expected
+labels: [bug]
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Figlytics version
+      description: Settings → About, or the image tag you run
+      placeholder: "1.4.0"
+    validations:
+      required: true
+  - type: dropdown
+    id: deployment
+    attributes:
+      label: How do you run it?
+      options:
+        - docker compose (file from this repository)
+        - docker run
+        - Kubernetes / other orchestrator
+        - Other
+    validations:
+      required: true
+  - type: dropdown
+    id: password
+    attributes:
+      label: Is FIGLYTICS_PASSWORD set?
+      options: ["No", "Yes"]
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened, and what did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: Output of `docker compose logs figlytics` (remove any token first)
+      render: text

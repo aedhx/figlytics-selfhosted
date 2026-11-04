@@ -1,0 +1,17 @@
+# Figlytics, self-hosted. Start: docker compose up -d  →  http://localhost:3000
+services:
+  figlytics:
+    image: ghcr.io/aedhx/figlytics:1
+    restart: unless-stopped
+    # Without a password the dashboard has no login: keep it on localhost.
+    # To share it on your network, set FIGLYTICS_PASSWORD below and change
+    # the port to "3000:3000" (ideally behind a reverse proxy with HTTPS).
+    ports:
+      - "127.0.0.1:3000:3000"
+    # environment:
+    #   FIGLYTICS_PASSWORD: "choose-a-long-password"
+    volumes:
+      - figlytics-data:/data
+
+volumes:
+  figlytics-data:
