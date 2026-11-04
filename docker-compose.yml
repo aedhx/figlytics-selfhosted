@@ -4,8 +4,9 @@ services:
     image: ghcr.io/aedhx/figlytics:1
     restart: unless-stopped
     # Without a password the dashboard has no login: keep it on localhost.
-    # To share it on your network, set FIGLYTICS_PASSWORD below and change
-    # the port to "3000:3000" (ideally behind a reverse proxy with HTTPS).
+    # To share it, set FIGLYTICS_PASSWORD below and put an HTTPS reverse proxy
+    # in front. A proxy on this host can use 127.0.0.1:3000 as is; publish
+    # "3000:3000" only for a proxy on another machine (Docker bypasses ufw).
     ports:
       - "127.0.0.1:3000:3000"
     # environment:

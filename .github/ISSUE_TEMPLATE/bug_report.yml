@@ -7,7 +7,7 @@ body:
     attributes:
       label: Figlytics version
       description: Settings → General (About block), or the image tag you run
-      placeholder: "1.4.0"
+      placeholder: "1.4.1"
     validations:
       required: true
   - type: dropdown
