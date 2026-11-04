@@ -28,14 +28,14 @@ Design-system teams ship libraries to dozens of product teams and then lose sigh
 
 Figma's built-in Library Analytics gives you numbers, one library at a time. Figlytics turns them into answers: every library and every team in one view, a health score you can tune, and insights that point at the component, team or file that needs attention.
 
-Everything comes from the official Figma REST API, read-only. Figlytics never modifies, deletes or publishes anything in your Figma organization.
+Everything comes from the official Figma REST API. Figlytics reads analytics data; the only thing it ever writes is a comment you post or delete yourself from the Comments page.
 
 ### What you get
 
 - **Health score**: a single 0–100 grade (A–F) per team and workspace, with configurable weights for adoption, retention, coverage, momentum and regularity.
 - **Cross-domain insights**: 10 detection engines correlate components, teams, files and styles to surface detachment spikes, adoption decay, orphaned components, irregular publishing and more.
 - **Adoption**: insertions vs. detachments per component, an adoption funnel, goals and trends over time.
-- **Search**: full-text search across components, variants, variables and styles, with type filters and usage counts.
+- **Search and filter**: find any component, variable or style on its page, with type filters and usage counts.
 - **Leaderboard and multi-team hub**: rank teams by health score, spot champions and the watchlist, compare teams across workspaces.
 - **Token, style and contrast audit**: orphan detection, usage tracking, theme drift and WCAG contrast checks across variables and text styles.
 - **AI usage and FinOps**: Figma AI credits per user, editor and container, tracked against the billing cycle, with burn rate and cost projection.
@@ -116,7 +116,7 @@ The image is `ghcr.io/aedhx/figlytics`, published for `linux/amd64` and `linux/a
 
 ## Figma requirements
 
-Most pages rely on the Figma Library Analytics API (`library_analytics:read`), available on the **Figma Enterprise** plan. Leaderboard, Comments, Files and Settings work on lower plans. Settings → Diagnostics tells you exactly which permissions your token has and what each missing one costs. Details: [figlytics.adx.cool](https://figlytics.adx.cool/#faq).
+Most pages rely on the Figma Library Analytics API (`library_analytics:read`), available on the **Figma Enterprise** plan. Leaderboard, Comments and Settings work on lower plans. Settings → Diagnostics tells you exactly which permissions your token has and what each missing one costs. Details: [figlytics.adx.cool](https://figlytics.adx.cool/#faq).
 
 ## Configuration
 
