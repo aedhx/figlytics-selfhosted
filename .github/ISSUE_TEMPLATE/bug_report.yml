@@ -6,7 +6,7 @@ body:
     id: version
     attributes:
       label: Figlytics version
-      description: Settings → About, or the image tag you run
+      description: Settings → General (About block), or the image tag you run
       placeholder: "1.4.0"
     validations:
       required: true
