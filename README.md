@@ -1,13 +1,13 @@
 <div align="center">
 
-<img src="https://figlytics.adx.cool/figlytics-logo.svg" width="88" height="88" alt="Figlytics logo" />
+<img src="docs/brand/figlytics-mark.svg" width="88" height="88" alt="Figlytics logo" />
 
 # Figlytics
 
 **Analytics for Figma design systems.** Component adoption, tokens and styles, team health, insights and Figma AI spend in one dashboard. Use it in the cloud or run it on your own infrastructure.
 
-[![Latest release](https://img.shields.io/github/v/release/aedhx/figlytics-selfhosted?label=release&color=22d3ee)](https://github.com/aedhx/figlytics-selfhosted/releases/latest)
-[![Docker image](https://img.shields.io/badge/image-ghcr.io%2Faedhx%2Ffiglytics-a855f7?logo=docker&logoColor=white)](https://github.com/users/aedhx/packages/container/package/figlytics)
+[![Latest release](https://img.shields.io/github/v/release/aedhx/figlytics-selfhosted?label=release&color=10b981)](https://github.com/aedhx/figlytics-selfhosted/releases/latest)
+[![Docker image](https://img.shields.io/badge/image-ghcr.io%2Faedhx%2Ffiglytics-10b981?logo=docker&logoColor=white)](https://github.com/users/aedhx/packages/container/package/figlytics)
 [![Platforms](https://img.shields.io/badge/platforms-linux%2Famd64%20%7C%20linux%2Farm64-555)](#quick-start)
 [![License](https://img.shields.io/badge/license-free%20self--hosted-2ea44f)](LICENSE)
 [![No telemetry](https://img.shields.io/badge/telemetry-none-2ea44f)](#privacy)
